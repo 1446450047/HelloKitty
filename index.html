@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equic="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="creature.css"> 
+    <title>HelloKitty</title>
+    <style>
+        .body {
+    background-color: red;
+}
+
+.circle {
+    background-color: pink; 
+
+    height: 700px;
+    width: 700px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    margin: auto; 
+
+    border-radius: 50%; 
+}
+
+.face {
+    background-color: white; 
+    border: solid 7px black;
+    height: 380px;
+    width: 450px;
+    
+    position: absolute; 
+    top:0; 
+    left:0;
+    bottom:0;
+    right:0;
+
+    margin: auto;
+
+    border-radius: 50% 50% 50% 50%;
+}
+
+.leftEye {
+    background-color:black; 
+    
+    height: 40px;
+    width: 30px;
+    
+    position: absolute; 
+    top:0; 
+    left:0;
+    bottom:10px;
+    right:200px;
+
+    margin: auto;
+
+    border-radius: 50% 50% 50% 50%;
+}
+
+.rightEye {
+    background-color:black; 
+    
+    height: 40px;
+    width: 30px;
+    
+    position: absolute; 
+    top:0; 
+    left:200px;
+    bottom:10px;
+    right:0;
+
+    margin: auto;
+
+    border-radius: 50% 50% 50% 50%;
+}
+
+.nose {
+    background-color: yellow; 
+    border: solid 5px black;
+    
+    height: 30px;
+    width: 40px;
+    
+    position: absolute; 
+    top:0; 
+    left:0;
+    bottom:-50px;
+    right:0px;
+
+    margin: auto;
+
+    border-radius: 50% 50% 50% 50%;
+}
+
+.leftEar {
+    background-color: white; 
+    border: solid 5px black;
+    height: 150px;
+    width: 120px;
+    
+    position: absolute; 
+    top:0; 
+    left:0;
+    bottom:330px;
+    right:280px;
+
+    margin: auto;
+
+    border-radius: 90% 90% 0 0;
+
+    transform: rotate(340deg)
+}
+
+.rightEar {
+    background-color: white; 
+    border: solid 5px black;
+    height: 150px;
+    width: 120px;
+    
+    position: absolute; 
+    top:0; 
+    left:280px;
+    bottom:330px;
+    right:0;
+
+    margin: auto;
+
+    border-radius: 90% 90% 0 0;
+
+    transform: rotate(20deg)
+}
+
+.leftWhiskerOne {
+    background-color:black; 
+    
+    height: 8px;
+    width: 150px;
+    
+    position: absolute; 
+    top:5px; 
+    left:0;
+    bottom:0px;
+    right:430px;
+
+    margin: auto;
+    transform: rotate(8deg);
+}
+
+.leftWhiskerTwo {
+    background-color:black; 
+    
+    height: 8px;
+    width: 150px;
+    
+    position: absolute; 
+    top:100px; 
+    left:0;
+    bottom:0;
+    right:440px;
+
+    margin: auto;
+    transform: rotate(0deg);
+}
+
+.leftWhiskerThree {
+    background-color:black; 
+    
+    height: 8px;
+    width: 150px;
+    
+    position: absolute; 
+    top:200px; 
+    left:0;
+    bottom:0;
+    right:426px;
+
+    margin: auto;
+    transform: rotate(350deg);
+}
+
+.rightWhiskerOne {
+    background-color:black; 
+    
+    height: 8px;
+    width: 150px;
+    
+    position: absolute; 
+    top:5px; 
+    left:430px;
+    bottom:0px;
+    right:0;
+
+    margin: auto;
+    transform: rotate(352deg);
+}
+
+.rightWhiskerTwo {
+    background-color:black; 
+    
+    height: 8px;
+    width: 150px;
+    
+    position: absolute; 
+    top:100px; 
+    left:440px;
+    bottom:0;
+    right:0;
+
+    margin: auto;
+    transform: rotate(0deg);
+}
+
+.rightWhiskerThree {
+    background-color:black; 
+    
+    height: 8px;
+    width: 150px;
+    
+    position: absolute; 
+    top:200px; 
+    left:426px;
+    bottom:0;
+    right:0;
+
+    margin: auto;
+    transform: rotate(10deg);
+}
+
+.bowOne {
+    background-color: red; 
+    border: solid 5px black;
+    height: 65px;
+    width: 65px;
+    
+    position: absolute; 
+    top:0; 
+    left:220px;
+    bottom:315px;
+    right:0;
+
+    margin: auto;
+
+    border-radius: 50% 50% 50% 50%;
+
+    transform: rotate(20deg)
+}
+
+.bowTwo {
+    background-color: red; 
+    border: solid 5px black;
+    height: 80px;
+    width: 120px;
+    
+    position: absolute; 
+    top:0; 
+    left:170px;
+    bottom:330px;
+    right:0;
+
+    margin: auto;
+
+    border-radius: 50% 95% 95% 50%;
+
+    transform: rotate(20deg)
+}
+
+.bowThree {
+    background-color: red; 
+    border: solid 5px black;
+    height: 80px;
+    width: 120px;
+    
+    position: absolute; 
+    top:0; 
+    left:285px;
+    bottom:290px;
+    right:0;
+
+    margin: auto;
+
+    border-radius: 95% 50% 50% 95%;
+
+    transform: rotate(20deg)
+}
+    </style>
+</head>
+<body>
+
+    <div class="circle"></div>
+    <div class="leftEar"></div>
+    <div class="rightEar"></div>
+    <div class="face"></div>
+    <div class="leftEye"></div>
+    <div class="rightEye"></div>
+    <div class="nose"></div>
+    <div class="rightWhiskerOne"></div>
+    <div class="rightWhiskerTwo"></div>
+    <div class="rightWhiskerThree"></div>
+    <div class="leftWhiskerOne"></div>
+    <div class="leftWhiskerTwo"></div>
+    <div class="leftWhiskerThree"></div>
+    <div class="bowTwo"></div>
+    <div class="bowThree"></div>
+    <div class="bowOne"></div> 
+</body>
+</html>
